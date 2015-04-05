@@ -8,14 +8,13 @@
 
 <div>
     <h4>Product</h4>
-	<hr />
+    <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Author.Email)
+            @Html.DisplayNameFor(model => model.Author.UserName)
         </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.Author.Email)
+            @Html.DisplayFor(model => model.Author.UserName)
         </dd>
 
         <dt>
@@ -24,14 +23,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.Category.Title)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Image.FileExtension)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Image.FileExtension)
         </dd>
 
         <dt>
