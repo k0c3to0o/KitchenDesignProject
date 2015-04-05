@@ -1,0 +1,12 @@
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\bin\Debug\MyResources.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\bin\Debug\MyResources.pdb
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\bin\Debug\bg-BG\MyResources.resources.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\MyResources.KitchenDesign.resources
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\MyResources.KitchenDesign.bg-BG.resources
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\MyResources.csproj.GenerateResource.Cache
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\bg-BG\MyResources.resources.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\MyResources.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\MyResources.pdb
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\bin\Debug\bg\MyResources.resources.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\MyResources.KitchenDesign.bg.resources
+D:\TFS.kg3orgiev\KitchenDesignProject\MyResources\obj\Debug\bg\MyResources.resources.dll

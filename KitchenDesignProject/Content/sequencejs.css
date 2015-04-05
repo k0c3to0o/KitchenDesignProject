@@ -1,0 +1,332 @@
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic');
+
+@import url('http://fonts.googleapis.com/css?family=Volkhov:400,400italic,700,700italic');
+#sequence-theme {
+  color: white;
+  font-size: 0.625em;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  height: 362px;
+  margin-bottom: 15px;
+  max-width: 1280px;
+  -webkit-backface-visibility: hidden;
+}
+@media (min-width: 1201px) {
+  #sequence-theme {
+    height: 450px;
+  }
+}
+@media (max-width: 1200px) {
+  #sequence-theme {
+    height: 362px;
+  }
+}
+@media (max-width: 980px) {
+  #sequence-theme {
+    height: 278px;
+  }
+}
+@media (max-width: 767px) {
+  #sequence-theme {
+    height: 177px;
+  }
+}
+@media (max-width: 480px) {
+  #sequence-theme {
+    display: none;
+  }
+}
+#sequence-theme #sequence {
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #e4e4e4;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+#sequence-theme #sequence ul {
+  margin: 0;
+}
+#sequence-theme .next,
+#sequence-theme .prev {
+  background-color: #7EB01A;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: -47.5px;
+  padding: 1px 10px;
+  top: 55%;
+  z-index: 1000;
+}
+@media (max-width: 980px) {
+  #sequence-theme .next,
+  #sequence-theme .prev {
+    height: 30px;
+  }
+}
+#sequence-theme .pause {
+  bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+}
+#sequence-theme .paused {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+  filter: alpha(opacity = 30);
+  opacity: 0.3;
+}
+#sequence-theme .prev {
+  left: 94.9%;
+  left: 93.7% \0/;
+  top: 100%;
+}
+#sequence-theme .next {
+  right:0%;
+  top: 100%;
+}
+@media (min-width: 980px) and (max-width:1199px) {
+  #sequence-theme .prev {
+    left: 93.5%;
+  }  
+}
+@media (min-width: 768px) and (max-width:979px) {
+  #sequence-theme .prev {
+    left: 91.5%;
+  } 
+}
+@media (min-width: 460px) and (max-width:767px) {
+  #sequence-theme .prev {
+    left: 87%;
+  } 
+}
+#sequence-theme .prev img,
+#sequence-theme .next img {
+  height: 100%;
+  width: auto;
+}
+#sequence-theme #sequence-preloader {
+  background: #e4e4e4;
+}
+#sequence-theme .nav {
+  bottom: -22%;
+  display: none;
+  right: 40%;
+  position: absolute;
+  z-index: 200;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#sequence-theme .nav li {
+  display: inline-block;
+  height: 140px;
+}
+#sequence-theme .nav li {
+  *display: inline;
+  /* Hack for IE7 and below as they don't support inline-block */
+}
+#sequence-theme .nav li img {
+  cursor: pointer;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+  filter: alpha(opacity = 50);
+  opacity: 0.5;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#sequence-theme .nav li img.active {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity = 100);
+  opacity: 1;
+}
+#sequence-theme #sequence li {
+  height: 100%;
+  position: absolute;
+  top: -50%;
+  width: 100%;
+}
+#sequence-theme #sequence li > * {
+  position: absolute;
+}
+#sequence-theme .next,
+#sequence-theme .prev {
+  position: absolute;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+  filter: alpha(opacity = 60);
+  opacity: 0.6;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence-theme .next:hover,
+#sequence-theme .prev:hover {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity = 100);
+  opacity: 1;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+/* MAIN TITLES ********************************************************************************************************/
+#sequence-theme .title {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+  right: 0%;
+  width: 70%;
+  bottom: -30%;
+  z-index: 100;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity = 0);
+  opacity: 0;
+}
+@media (min-width: 1200px) {
+  #sequence-theme .title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #sequence-theme .title {
+    text-indent: -9999px;
+  }
+}
+#sequence-theme .title span {
+  background-color: #383838;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+#sequence-theme .animate-in .title {
+  right: 15%;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity = 100);
+  opacity: 1;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#sequence-theme .animate-out .title {
+  right: 100%;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity = 0);
+  opacity: 0;
+  -moz-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#sequence-theme .subtitle {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  right: 0%;
+  width: 70%;
+  bottom: -40%;
+  z-index: 100;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity = 0);
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  #sequence-theme .subtitle {
+    text-indent: -9999px;
+  }
+}
+#sequence-theme .subtitle span {
+  background-color: #7EB01A;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+#sequence-theme .animate-in .subtitle {
+  right: 15%;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity = 100);
+  opacity: 1;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#sequence-theme .animate-out .subtitle {
+  right: 100%;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity = 0);
+  opacity: 0;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+/* IMAGE **************************************************************************************************************/
+#sequence-theme .img-bg {
+  bottom: -50%;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity = 0);
+  opacity: 0;
+}
+#sequence-theme .animate-in .img-bg {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity = 100);
+  opacity: 1;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -ms-transition-delay: 1s;
+  transition-delay: 1s;
+}
+#sequence-theme .animate-out .img-bg {
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity = 0);
+  opacity: 0;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  transform: scale(1.3);
+  -webkit-transition-property: opacity, -webkit-transform;
+  -webkit-transition-duration: 0s, 2s;
+  -webkit-transition-delay: 2s, 0s;
+  -moz-transition-property: opacity, -moz-transform;
+  -moz-transition-duration: 0s, 2s;
+  -moz-transition-delay: 2s, 0s;
+  -ms-transition-property: opacity, -ms-transform;
+  -ms-transition-duration: 0s, 2s;
+  -ms-transition-delay: 2s, 0s;
+  -o-transition-property: opacity, -o-transform;
+  -o-transition-duration: 0s, 2s;
+  -o-transition-delay: 2s, 0s;
+  transition-property: opacity, transform;
+  transition-duration: 0s, 2s;
+  transition-delay: 2s, 0s;
+}
+#sequence-theme #sequence li:nth-child(1) .img-bg {
+  -webkit-transform-origin: 30% 40%;
+  -moz-transform-origin: 30% 40%;
+  -ms-transform-origin: 30% 40%;
+  -o-transform-origin: 30% 40%;
+  transform-origin: 30% 40%;
+}
+#sequence-theme #sequence li:nth-child(2) .img-bg {
+  -webkit-transform-origin: 60% 50%;
+  -moz-transform-origin: 60% 50%;
+  -ms-transform-origin: 60% 50%;
+  -o-transform-origin: 60% 50%;
+  transform-origin: 60% 50%;
+}
+#sequence-theme #sequence li:nth-child(3) .img-bg {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}

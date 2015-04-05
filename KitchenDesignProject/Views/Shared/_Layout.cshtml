@@ -1,0 +1,199 @@
+﻿@using MyResources = KitchenDesignProject.Resources.KitchenDesign;
+
+@{
+
+    var languageCookie = HttpContext.Current.Request.Cookies["lang"];
+
+    var language = KitchenDesignProject.Common.GlobalConstants.Lang;
+    if (languageCookie != null)
+    {
+        language = HttpContext.Current.Request.Cookies["lang"].Value;
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;" />
+    <link rel="shortcut icon" href="Images/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="Images/apple-touch-icon-144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="Images/apple-touch-icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="Images/apple-touch-icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="Images/apple-touch-icon-57-precomposed.png" />
+    <title>@ViewBag.Title - Kitchen Design</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/style.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/prettyPhoto.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/sequencejs.css" />
+</head>
+<body>
+    <!-- start: Top Menu -->
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#"> <span class="logo-text">constrution</span> <small>Responsive Theme</small></a>
+                <span class="langaddr">
+                    <address class="pull-left">
+                        <i class="icon-envelope"></i> <a href="mailto:info@site.com">info@site.com</a>
+                        <i class="icon-phone"></i> (359) 889674451
+                    </address>
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            @using (Html.BeginForm("ChangeLanguage", "Culture", FormMethod.Get))
+                            {
+                                @Html.Hidden("url", HttpUtility.UrlEncode(Request.RawUrl))
+                                @Html.DropDownList("lang", new SelectList(new[] { new KeyValuePair<string, string>("Bulgarian", "bg-BG"), new KeyValuePair<string, string>("Russian", "ru-RU"), new KeyValuePair<string, string>("English", "en-US") }, "Value", "Key", language), new { onchange = "this.form.submit();", id = "lang", @class = "form-control" })
+                            }
+                        </div>
+                    </div>
+                </span>
+            </div>
+            <div class="container navi">
+                <ul class="nav">
+                    <li class="dropdown active">
+                        @Html.ActionLink(MyResources.Home, "Index", "Home", null, new { @class = "dropdown-toggle", data_toggle = "dropdown" })
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="portfolio.html">
+                            @MyResources.Portfolio
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="blog-sidebar-right.html">@MyResources.Blog</a>
+                    </li>
+                    <li>
+                        @Html.ActionLink(MyResources.Contacts, "Contact", "Home")
+                    </li>
+                </ul>
+                <div class="pull-right">
+                    <section class="search clearfix">
+                        <form id="search" class="input-append">
+                            <input id="appendedInputButton" type="text" size="16" value='@MyResources.Search' name="search site" onfocus="if(this.value=='Search...') this.value=''" onblur="if(this.value=='') this.value='Search...'">
+                            <input class="btn search-bt" type="submit" name="submit" value="">
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <!-- start: Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <hr class="transparent" />
+                <div class="span3">
+                    <h3 class="widget-title">About Us</h3>
+                    <div class="widget-inner">
+                        <p>
+                            Nunc consectetur ornare dolor, eget rutrum justo semper ac. Donec vel molestie tortor.
+                            Vivamus luctus, nibh id fermentum imperdiet, sapien nisi imperdiet nibh.
+                        </p>
+                        <p>
+                            Nunc consectetur ornare dolor, eget rutrum justo semper ac. Donec vel molestie tortor.
+                            Vivamus luctus, nibh id fermentum imperdiet, sapien nisi imperdiet nibh.
+                        </p>
+                    </div>
+                </div>
+                <div class="span3">
+                    <h3 class="widget-title">Latest Posts</h3>
+                    <div class="widget-inner lates-blog-post">
+                        <div class="media">
+                            <i class="icon-pencil media-object"></i>
+                            <div class="media-body">
+                                <a href="#">Aliquam nunc erat, suscipit molestie interdum eget, molestie vel eros</a>
+                                <div class="date">2 days ago</div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="icon-pencil media-object"></i>
+                            <div class="media-body">
+                                <a href="#">Aenean a sapien in magna luctus aliquet in eu purus. Sed venenatis luctus varius</a>
+                                <div class="date">5 days ago</div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="icon-pencil media-object"></i>
+                            <div class="media-body">
+                                <a href="#">Sed a rhoncus mi. Morbi eu elit sapien, eu adipiscing nisl. Duis in turpis et mi molestie bibendum eget eget mauris</a>
+                                <div class="date">1 months ago</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="span3">
+                    <h3 class="widget-title">latest Tweets</h3>
+                    <!-- start: Twitter Widget -->
+                    <div id="twitter-foot"></div>
+                    <!-- end: Twitter Widget -->
+                </div>
+                <div class="span3">
+                    <h3 class="widget-title">Contact Info</h3>
+                    <div class="widget-inner">
+                        <p>
+                            Nunc consectetur ornare dolor, eget rutrum justo semper ac. Donec vel molestie tortor.
+                            Vivamus luctus, nibh id fermentum imperdiet, sapien nisi imperdiet nibh.
+                        </p>
+                        <address>
+                            <div class="row-fluid">
+                                <div class=""><i class="icon-home"></i> <strong>Address:</strong>London, 90210</div>
+                                <div class=""><i class="icon-phone"></i> <strong>Phone:</strong> (123) 456-7890</div>
+                                <div class=""><i class="icon-envelope"></i> <strong>Email:</strong> <a href="mailto:#">info@email.com</a></div>
+                            </div>
+                        </address>
+                        <h4 class="socialh">Latest Posts</h4>
+                        <ul class="social clearfix">
+                            <li><a href="../../../www.facebook.com/pages/dxthemescom/559921474037790.html#" class="facebook" data-original-title="Facebook" data-placement="top" rel="tooltip"></a></li>
+                            <li><a href="../../../twitter.com/dxthemes.html" class="twitter2" data-original-title="Twitter" data-placement="top" rel="tooltip"></a></li>
+                            <li><a href="#" class="google-plus" data-original-title="Google+" data-placement="top" rel="tooltip"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end: Footer -->
+    <!-- start: Footer menu-->
+    <section id="footer-menu">
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <p class="copyright">&copy; Copyright 2015. Powered by k0c3to0o</p>
+                </div>
+                <div class="span8 hidden-phone">
+                    <ul class="pull-right">
+                        <li>@Html.ActionLink(MyResources.Home, "Index", "Home")</li>
+                        <li><a href="#">@Html.ActionLink(MyResources.AboutUs, "About", "Home")</li>
+                        <li><a href="#">@Html.ActionLink(MyResources.Portfolio, "About", "Home")</li>
+                        <li><a href="#">@Html.ActionLink(MyResources.Blog, "About", "Home")</li>
+                        <li><a href="#">@Html.ActionLink(MyResources.Contacts, "About", "Home")</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end: Footer menu-->
+    <script type="text/javascript" src="~/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="~/Scripts/superfish.js"></script>
+    <script type="text/javascript" src="~/Scripts/hoverIntent.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="~/Scripts/jflickrfeed.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.elastislide.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.tweet.js"></script>
+    <script type="text/javascript" src="~/Scripts/smoothscroll.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery.ui.totop.js"></script>
+    <script type="text/javascript" src="~/Scripts/ajax-mail.js"></script>
+    <script type="text/javascript" src="~/Scripts/main.js"></script>
+    <script src="~/Scripts/sequence.jquery-min.js"></script>
+    <script src="~/Scripts/sequencejs-options.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

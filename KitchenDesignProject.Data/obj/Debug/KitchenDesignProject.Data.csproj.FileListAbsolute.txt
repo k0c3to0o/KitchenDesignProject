@@ -1,0 +1,16 @@
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\obj\Debug\KitchenDesignProject.Data.csprojResolveAssemblyReference.cache
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\KitchenDesignProject.Data.dll.config
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\KitchenDesignProject.Data.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\KitchenDesignProject.Data.pdb
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\EntityFramework.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\KitchenDesignProject.Models.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\KitchenDesignProject.Models.pdb
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\EntityFramework.xml
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\obj\Debug\KitchenDesignProject.Data.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Data\obj\Debug\KitchenDesignProject.Data.pdb

@@ -1,0 +1,5 @@
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Common\bin\Debug\KitchenDesignProject.Common.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Common\bin\Debug\KitchenDesignProject.Common.pdb
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Common\obj\Debug\KitchenDesignProject.Common.dll
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Common\obj\Debug\KitchenDesignProject.Common.pdb
+D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Common\obj\Debug\KitchenDesignProject.Common.csprojResolveAssemblyReference.cache
