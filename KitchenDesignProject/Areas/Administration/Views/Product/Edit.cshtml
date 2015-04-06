@@ -1,4 +1,5 @@
-﻿@model KitchenDesignProject.Areas.Administration.Models.ProductModel
+﻿
+@model KitchenDesignProject.Areas.Administration.Models.ProductModel
 
 @{
     ViewBag.Title = "Edit";
@@ -81,7 +82,12 @@
                 <input type="file" id="imgFile" name="UploadedImages" multiple="multiple" class="form-control" />
             </div>
         </div>
-        @AppHelpers.Submit("Submit")
+        @*@AppHelpers.Submit("Submit")*@
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </div>
     </div>
 }
 

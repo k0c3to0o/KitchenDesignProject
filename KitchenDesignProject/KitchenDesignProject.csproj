@@ -588,7 +588,7 @@
     <Content Include="Areas\Administration\Views\Product\Details.cshtml" />
     <Content Include="Areas\Administration\Views\Product\Edit.cshtml" />
     <Content Include="Areas\Administration\Views\Product\Index.cshtml" />
-    <Content Include="App_Code\AppHelpers.cshtml" />
+    <Content Include="Infrastructure\Helpers\AppHelpers.cshtml" />
     <Content Include="Areas\Administration\Views\Shared\_ImagesPartial.cshtml" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
