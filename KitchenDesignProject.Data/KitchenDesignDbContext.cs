@@ -10,6 +10,7 @@
 
     using KitchenDesignProject.Models;
     using System.Data.Entity;
+    using KitchenDesignProject.Data.Migrations;
     public class KitchenDesignDbContext : IdentityDbContext<User>
     {
         public KitchenDesignDbContext()
@@ -25,6 +26,11 @@
         public static KitchenDesignDbContext Create()
         {
             return new KitchenDesignDbContext();
+        }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<KitchenDesignDbContext,Configuration>());
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

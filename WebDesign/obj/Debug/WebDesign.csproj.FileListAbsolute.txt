@@ -3,4 +3,3 @@ D:\TFS.kg3orgiev\KitchenDesignProject\WebDesign\bin\WebDesign.dll
 D:\TFS.kg3orgiev\KitchenDesignProject\WebDesign\bin\WebDesign.pdb
 D:\TFS.kg3orgiev\KitchenDesignProject\WebDesign\obj\Debug\WebDesign.dll
 D:\TFS.kg3orgiev\KitchenDesignProject\WebDesign\obj\Debug\WebDesign.pdb
-D:\TFS.kg3orgiev\KitchenDesignProject\WebDesign\obj\Debug\WebDesign.csprojResolveAssemblyReference.cache

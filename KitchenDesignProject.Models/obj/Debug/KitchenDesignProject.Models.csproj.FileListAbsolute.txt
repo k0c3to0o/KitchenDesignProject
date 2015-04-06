@@ -11,4 +11,3 @@ D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Models\bin\Debug\Enti
 D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Models\bin\Debug\EntityFramework.SqlServer.xml
 D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-D:\TFS.kg3orgiev\KitchenDesignProject\KitchenDesignProject.Models\obj\Debug\KitchenDesignProject.Models.csprojResolveAssemblyReference.cache
